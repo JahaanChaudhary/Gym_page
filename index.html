@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitness planet</title>
+</head>
+<link rel = "stylesheet" href="css/style.css">
+<style>
+    /*CSS reset*/
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg2.jpg');
+        background-repeat:no-repeat;
+        background-size: cover;
+    }
+
+    .left{
+        display: inline-block;
+        position: absolute;
+        left: 15px;
+        top:16px;
+        display: inline-block;
+    }
+
+    .left img {
+        width: 83px;
+        height: 70px;  
+    }
+
+    .left div{
+        line-height: 5px;
+        color: aliceblue;
+        text-align: center;
+        font-size: 35px;
+        /* border: 2px grey solid; */
+        line-height: 28px;
+        /* text-underline-position: below; */
+    }
+    .mid{
+        display: block;
+        width: 53%;
+        margin: 20px auto;
+        
+    }
+    .right{
+        position: absolute;
+        right: 40px;
+        top: 20px;
+        display: inline-block;
+        
+    }
+    .btn{
+        color: rgb(102, 102, 102);
+        margin: 0px 0px;
+        padding: 0px 6px;
+        border: black;
+        border-radius: 10px;
+        cursor: pointer;
+        
+    }
+    .btn :hover{
+        background-color:rebeccapurple;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        padding: 25px 20px;
+        font-size: 28px;
+    }
+    .navbar li a{
+        text-decoration: none;
+        color: #e3e3e3b5;
+    }
+
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration:wavy;
+        color: black;
+    }
+
+    /* main body CSS */
+
+    .container{
+        border: 5px pink solid;
+        border-radius: 25px;
+        border-color: white;
+        font-size: 15px;
+        color:whitesmoke;
+        margin: 100px 830px;
+        padding: 12px 30px;
+        width: 35%;
+    }
+
+    .container h1{
+        text-align: center;
+        font-size: 35px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container button{
+        display: block;
+        margin: auto;
+        color: black;
+        font-family:'Times New Roman', Times, serif;
+        width: 15%;
+
+        
+    }
+
+    .form-group input{
+        text-align: center;
+        display: block;
+        margin: 10px auto;
+        padding: 10px 10px;
+        border: 4px grey solid;
+        width: 45%;
+    }
+    
+
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+         <!-- left section -->
+         <img src="img/logo.jpg">
+         <div>Fitness Planet</div>
+        </div>
+
+        <div class="mid">
+            <!-- middle section -->
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Journey</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <!-- rightside section -->
+            <button class="btn">About Us</button>
+            <button class="btn">Contact Us</button>
+        </div>
+    </header>
+
+    <!-- main conatiner body -->
+
+    <div class="container">
+        <!-- Container body in the page -->
+        <h1>The best in fitness industry!!</h1>
+        <form action="onaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email ID">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
